@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=League+Spartan:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: League Spartan;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #3c4664;
+}
+
+.wrapper__container {
+  max-width: 100%;
+  min-height: 90%;
+  margin: auto;
+  padding-top: 42px;
+  background-color: #3c4664;
+}
+
+.header {
+  width: 36%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.wrapper__number__color {
+  text-align: end;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 54px;
+  font-size: 12px;
+}
+
+.wrapper__text__btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.header__text__calc {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.btn__theme {
+  display: flex;
+}
+
+.header__text__theme {
+  margin-right: 16px;
+  font-size: 10px;
+  padding-top: 6px;
+}
+
+.checkbox__group {
+  position: relative;
+  width: 54px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 30px;
+  margin-right: 2px;
+}
+
+.checkbox {
+  visibility: hidden;
+}
+
+.checkbox__label {
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: orangered;
+  top: 3px;
+  left: 4px;
+}
+.checkbox:checked + .checkbox__label {
+  left: 21px;
+}
+
+/* ************* calculator display ************ */
+
+.wrapper__calculator_display {
+  width: 100%;
+  height: 108px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.wrapper__display__input {
+}
+
+.calculator_display__input {
+  width: 92%;
+  height: 55px;
+  margin-top: 26px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: hsl(224, 36%, 15%);
+  color: white;
+  caret-color: transparent;
+  cursor: default;
+  direction: rtl;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.wrapper__calculator__btn__number {
+  width: 100%;
+  height: 286px;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  margin-top: 22px;
+}
+
+.wrapper__calculator_btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.calculator_btn {
+  width: 80%;
+  height: 38px;
+  border-radius: 10px;
+  box-shadow: 0 3px 1px #b1a397;
+  border: 3px;
+  margin-top: 12px;
+  background-color: #eae3dc;
+  color: #444c5d;
+  font-size: 22px;
+}
+
+.calculator_btn__del {
+  background-color: #647299;
+  color: #f8fdfc;
+  box-shadow: 1px 3px 1px #424e73;
+}
+
+.calculator_btn__reset {
+  grid-column: 1 / span 2;
+  margin-top: 22px;
+  background-color: #647299;
+  color: #f8fdfc;
+  box-shadow: 1px 3px 1px #424e73;
+}
+
+.calculator_btn__result {
+  grid-column: 3 / span 2;
+  margin-top: 22px;
+  background-color: #d13f30;
+  box-shadow: 1px 3px 1px #932519;
+  color: #f8fdfc;
+}
